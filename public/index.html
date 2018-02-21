@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>LOCALERT</title>
+  </head>
+
+  <body>
+    <div class="top" id="top">
+      <div class="navbar-fixed">
+         <nav>
+           <div class="nav-wrapper">
+             <a id="logo_image" href="#top">  L O C A L E R T  </a>
+             <ul class="right hide-on-med-and-down">
+               <li><a href="#au"> About Us</a></li>
+               <li><a href="#su"> Sign Up</a></li>
+               <li><a class='dropdown-button btn' href='#' id="dd" data-activates='dropdown1'>My Helplines!</a><li>
+
+                 <ul id='dropdown1' class='dropdown-content'>
+                   <li> No Contacts Yet!</li>
+                 </ul>
+
+             </ul>
+           </div>
+         </nav>
+      </div>
+    </div>
+
+
+
+    <div  class="bottom">
+
+      <!-- <div class="logo">
+        <div class="L"> L</div>
+        <div class="O"> O</div>
+        <div class="C"> C</div>
+        <div class="A"> A</div>
+        <div class="L"> L</div>
+        <div class="E"> E</div>
+        <div class="R"> R</div>
+        <div class="T"> T</div>
+      </div> -->
+
+
+      <!-- the main button to send whatever -->
+      <div   class="buttons">
+        <!-- <div class="button_box"> -->
+        <br><br>
+          <button id="green" onclick="safe()" class="waves-effect waves-light btn-large">Green Alert</button><br><br>
+          <button id="orange" onclick="orange()" class="waves-effect waves-light btn-large">Orange Alert</button><br><br>
+          <button id="red" onclick=red() class="waves-effect waves-light btn-large">Red Alert</button><br><br>
+          <!-- </div><br> -->
+      </div>
+
+      <!-- about us to include the modes we are offering! to be completed -->
+
+      <div class="about_us" id="au">
+        <br><br>
+        <div class="carousel carousel-slider center" data-indicators="true">
+
+          <div class="carousel-item black white-text" href="#one!">
+            <h1>LOCALERT</h1>
+            <p class="white-text"><br><h4>We are always with you!</h4>
+              <h4> Stay Safe and keep your trusted ones informed about your whereabouts with LOCALERT.</h4>
+
+            </p>
+          </div>
+          <div class="carousel-item grey darken-4 white-text" href="#two!">
+            <h1>GREEN ALERT</h1>
+            <p class="white-text"><h4>Tell your trusted contacts your location and that you are safe!</h4></p>
+          </div>
+          <div class="carousel-item grey darken-3 white-text" href="#three!">
+            <h1>ORANGE ALERT</h1>
+            <p class="white-text"><h4>Tell your trusted contacts that you need help by sending them your location.</h4>
+              <h4> Also find places from where you can get help!</h4></p>
+          </div>
+          <div class="carousel-item grey darken-2 white-text" href="#four!">
+            <h1>RED ALERT</h1>
+            <p class="white-text"><h4>Send out a DISTRESS CALL to all your trusted contacts!</h4>
+              <h4>Find nearby locations of Help!</h4><h4> We will inform our trusted contacts around you to reach out to you!</h4>
+            </p>
+          </div>
+
+        </div>
+
+      </div><br><br>
+
+      <!-- the user input signup form and not login form  -->
+      <div class="userinfo" id="su">
+        <form class="col s12" action="/signup" method="post">
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="user_first_name" name="user_first_name" type="text" class="validate">
+              <label for="user_first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="user_last_name"  name="user_last_name" type="text" class="validate">
+              <label for="user_last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="user_email" name="user_email" type="email" class="validate">
+              <label for="user_email">Your Email ID</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="user_phone" name="user_phone" type="number" class="validate">
+              <label for="user_phone">Your Phone No</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="c1_email" name="c1_email" type="email" class="validate">
+              <label for="c1_email">Helpline Email 1</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="c1_phone" name="c1_phone" type="number" class="validate">
+              <label for="c1_phone">Helpline Phone 1</label>
+            </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="c2_email" name="c2_email" type="email" class="validate">
+            <label for="c2_email">Helpline Email 2</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="c2_phone" name="c2_phone"type="number" class="validate">
+            <label for="c2_phone">Helpline Phone 2</label>
+          </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" id="sub_but"  type="submit" name="userinfo">Submit
+          <i class="material-icons right" ></i>
+        </button>
+      </div>
+        </form>
+      </div>
+
+    <div class="feedback" >
+      <!-- here i need to disply user profile -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card black">
+            <div class="card-content white-text">
+              <span class="card-title"><h2>Dear User</h2></span>
+              <br><h4 id="fb">Thank you for using LOCALERT! </h4><br>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>  </div>
+
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4&callback=initMap">
+      </script>
+
+
+    <script src="client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </body>
+</html>
