@@ -72,22 +72,3 @@ window.onload=function(){
     }
 
   }
-
-
-// // using SendGrid's v3 Node.js Library
-// // https://github.com/sendgrid/sendgrid-nodejs
-// const sgMail = require('@sendgrid/mail');
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-// const msg = {
-//   to: 'test@example.com',
-//   from: 'test@example.com',
-//   subject: 'Sending with SendGrid is Fun',
-//   text: 'and easy to do anywhere, even with Node.js',
-//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-// };
-// sgMail.send(msg);
-//
-//
-// echo "export SENDGRID_API_KEY='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'" > sendgrid.env
-// echo "sendgrid.env" >> .gitignore
-// source ./sendgrid.env
