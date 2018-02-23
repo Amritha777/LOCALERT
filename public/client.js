@@ -171,7 +171,7 @@ function orange(){
       var tr="Dear Recipent, "+"The user is currently at the location: "+ myloc+" And is currently looking for help. The user is sending out a call for help. Thank you for your concern!";
       console.log(tr);
       call(tr,  function(){
-          let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+          let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=YOUR_API_KEY`;
           $.get({
             url:U,
             success:function(err,status,d){
@@ -186,7 +186,7 @@ function orange(){
               //  console.log("NAME:",d.responseJSON.results[i].name);
               //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                 let c=d.responseJSON.results[i].place_id;
-                let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                 $.get({
                   url:U,
                   success:function(err,status,data)
@@ -202,7 +202,7 @@ function orange(){
             }
 
           })
-          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=YOUR_API_KEY`;
           $.get({
             url:U,
             success:function(err,status,d){
@@ -217,7 +217,7 @@ function orange(){
               //  console.log("NAME:",d.responseJSON.results[i].name);
               //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                 let c=d.responseJSON.results[i].place_id;
-                let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                 $.get({
                   url:U,
                   success:function(err,status,data)
@@ -233,7 +233,7 @@ function orange(){
             }
 
           })
-          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=YOUR_API_KEY`;
           $.get({
             url:U,
             success:function(err,status,d){
@@ -248,7 +248,7 @@ function orange(){
               //  console.log("NAME:",d.responseJSON.results[i].name);
               //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                 let c=d.responseJSON.results[i].place_id;
-               U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+               U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                 $.get({
                   url:U,
                   success:function(err,status,data)
@@ -264,7 +264,7 @@ function orange(){
             }
 
           })
-          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+          U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=YOUR_API_KEY`;
           $.get({
             url:U,
             success:function(err,status,d){
@@ -279,7 +279,7 @@ function orange(){
               //  console.log("NAME:",d.responseJSON.results[i].name);
               //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                 let c=d.responseJSON.results[i].place_id;
-               U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+               U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                 $.get({
                   url:U,
                   success:function(err,status,data)
@@ -424,7 +424,7 @@ function orange(){
         var tr="Dear Recipent, "+"THE USER IS IN DANGER AT LOCATION: "+ myloc+" AND IS CALLING OUT FOR HELP. PLEASE SEND HELP! THANKYOU FOR YOUR CONCERN!";
         console.log(tr);
         call(tr,  function(){
-            let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+            let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=YOUR_API_KEY`;
             $.get({
               url:U,
               success:function(err,status,d){
@@ -439,7 +439,7 @@ function orange(){
                 //  console.log("NAME:",d.responseJSON.results[i].name);
                 //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                   let c=d.responseJSON.results[i].place_id;
-                  let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                  let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_AP_KEY`
                   $.get({
                     url:U,
                     success:function(err,status,data)
@@ -455,7 +455,7 @@ function orange(){
               }
 
             })
-            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=YOUR_API_KEY`;
             $.get({
               url:U,
               success:function(err,status,d){
@@ -470,7 +470,7 @@ function orange(){
                 //  console.log("NAME:",d.responseJSON.results[i].name);
                 //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                   let c=d.responseJSON.results[i].place_id;
-                  let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                  let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                   $.get({
                     url:U,
                     success:function(err,status,data)
@@ -486,7 +486,7 @@ function orange(){
               }
 
             })
-            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=YOUR_API_KEY`;
             $.get({
               url:U,
               success:function(err,status,d){
@@ -501,7 +501,7 @@ function orange(){
                 //  console.log("NAME:",d.responseJSON.results[i].name);
                 //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                   let c=d.responseJSON.results[i].place_id;
-                 U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                 U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                   $.get({
                     url:U,
                     success:function(err,status,data)
@@ -517,7 +517,7 @@ function orange(){
               }
 
             })
-            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+            U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=YOUR_API_KEY`;
             $.get({
               url:U,
               success:function(err,status,d){
@@ -532,7 +532,7 @@ function orange(){
                 //  console.log("NAME:",d.responseJSON.results[i].name);
                 //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
                   let c=d.responseJSON.results[i].place_id;
-                 U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+                 U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
                   $.get({
                     url:U,
                     success:function(err,status,data)
