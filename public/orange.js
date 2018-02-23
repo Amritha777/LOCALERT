@@ -7,7 +7,7 @@ window.onload= function(){
     lng: position.coords.longitude
   };
   console.log("my current lattiude and longitude",pos);
-  let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+  let U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=police&key=YOUR_API_KEY`;
   $.get({
     url:U,
     success:function(err,status,d){
@@ -22,7 +22,7 @@ window.onload= function(){
       //  console.log("NAME:",d.responseJSON.results[i].name);
       //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
         let c=d.responseJSON.results[i].place_id;
-        let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+        let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
         $.get({
           url:U,
           success:function(err,status,data)
@@ -38,7 +38,7 @@ window.onload= function(){
     }
 
   })
-  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=hospital&key=YOUR_API_KEY`;
   $.get({
     url:U,
     success:function(err,status,d){
@@ -53,7 +53,7 @@ window.onload= function(){
       //  console.log("NAME:",d.responseJSON.results[i].name);
       //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
         let c=d.responseJSON.results[i].place_id;
-        let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+        let U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
         $.get({
           url:U,
           success:function(err,status,data)
@@ -69,7 +69,7 @@ window.onload= function(){
     }
 
   })
-  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=car_repair&key=YOUR_API_KEY`;
   $.get({
     url:U,
     success:function(err,status,d){
@@ -84,7 +84,7 @@ window.onload= function(){
       //  console.log("NAME:",d.responseJSON.results[i].name);
       //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
         let c=d.responseJSON.results[i].place_id;
-       U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+       U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_API_KEY`
         $.get({
           url:U,
           success:function(err,status,data)
@@ -100,7 +100,7 @@ window.onload= function(){
     }
 
   })
-  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`;
+  U=`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${pos.lat},${pos.lng}&radius=1000&type=shopping&key=YOUR_API_KEY`;
   $.get({
     url:U,
     success:function(err,status,d){
@@ -115,7 +115,7 @@ window.onload= function(){
       //  console.log("NAME:",d.responseJSON.results[i].name);
       //  console.log("ADDRESS:",d.responseJSON.results[i].vicinity);
         let c=d.responseJSON.results[i].place_id;
-       U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=AIzaSyChIRBXEQv5CqNtDHv3R0AkQt_zrvbvNU4`
+       U=`https://maps.googleapis.com/maps/api/place/details/json?placeid=${c}&key=YOUR_PI_KEY`
         $.get({
           url:U,
           success:function(err,status,data)
