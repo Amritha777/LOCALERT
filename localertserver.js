@@ -4,22 +4,16 @@ const app=express();
 const bp=require('body-parser');
 const sql=require('mysql');
 
-
-// const nexmo = new Nexmo({
-//   'apiKey': 'ec66bc80',
-//   'apiSecret': 'abadced323d19dc5'
-// })
-
 let config={
   "host":'localhost',
   "user":'amritha',
-  "password":'123456789',
+  "password":'YOUR_PASSWORD',
   "database":'localert'
 }
 
 let connection=sql.createConnection(config);
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey('YOUR_API_KEY');
 
 app.use(bp.urlencoded({extended:true}));
 app.use(bp.json());
