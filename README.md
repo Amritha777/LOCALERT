@@ -7,4 +7,4 @@ Incidents are not uncommon which is why ones safety should always be prioritized
 This simple webapp helps to send the user's current location and details to their trusted contacts which the user will be specifying will signing up.
 
 # 3 MODES OF OPERATION
-## RED MODE - 
+## GREEN MODE :
