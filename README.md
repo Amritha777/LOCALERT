@@ -8,3 +8,4 @@ This simple webapp helps to send the user's current location and details to thei
 
 # 3 MODES OF OPERATION
 ## GREEN MODE :
+In this mode the user simple send a green alert i.e. the user is safely at his/her location.
