@@ -33,6 +33,10 @@ The users also are displayed nearby safe locations that can offer help.
 
 ![signup portal view](https://github.com/Amritha777/LOCALERT/blob/master/screenshots/Screenshot%20from%202018-02-28%2003-19-20.png "Red Mode ")
 
+# FETCHING NEARBY LOCATIONS
+
+![the nearby safe locations](https://github.com/Amritha777/LOCALERT/blob/master/screenshots/Screenshot%20from%202018-02-28%2003-21-19.png "Red Mode ")
+
 # FUTURE EXTENSION
 We need to get work more on the RED mode basically used in danger. We propose that data be scraped to get the contact details of the nearby safe locations. Also using socket programming, detect LOCALERT users who are around the victim who can receive the notification on the app providing the victim's location asking for help.
 
